@@ -19,20 +19,14 @@
               <h3 class="artist-name">{{ playerBar.songPlayer.currentAlbum.artist }}</h3>
             </div>
             <div class="seek-control">
-                <div class="seek-bar">
-                    <div class="fill"></div>
-                    <div class="thumb"></div>
-                </div>
+                <seek-bar></seek-bar>
                 <div ng-show="playerBar.songPlayer.currentSong.playing" class="current-time"></div>
                 <div ng-show="playerBar.songPlayer.currentSong.playing" class="total-time">{{ playerBar.songPlayer.currentSong.length }}</div>
             </div>
         </div>
         <div class="control-group volume">
             <span class="icon ion-volume-high"></span>
-            <div class="seek-bar">
-                <div class="fill"></div>
-                <div class="thumb"></div>
-            </div>
+            <seek-bar></seek-bar>
         </div>
     </div>
 </section>
