@@ -19,7 +19,7 @@
               <h3 class="artist-name">{{ playerBar.songPlayer.currentAlbum.artist }}</h3>
             </div>
             <div class="seek-control">
-                <seek-bar></seek-bar>
+                <seek-bar value="{{ playerBar.songPlayer.currentTime }}" max="{{ playerBar.songPlayer.currentSong.duration }}" on-change="playerBar.songPlayer.setCurrentTime(value)"></seek-bar>
                 <div ng-show="playerBar.songPlayer.currentSong.playing" class="current-time"></div>
                 <div ng-show="playerBar.songPlayer.currentSong.playing" class="total-time">{{ playerBar.songPlayer.currentSong.length }}</div>
             </div>
